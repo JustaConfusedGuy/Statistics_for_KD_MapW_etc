@@ -9,34 +9,42 @@
 /// </summary>
 public class seperatePlayers : MonoBehaviour
 {
-    public int playerIndex; //The specific player index;
+    public int playerIndex = 0; //The specific player index;
     public void seperatePlayer(int Pind)
     {
-        
+        print(Pind);
         switch (Pind)
         {
-            case 0:
-                Pind = 1;
-                Debug.Log("Case 1! " + Pind);
-                break;
             case 1:
-                Pind = 2;
-                Debug.Log("Case 2! " + Pind);
+                PlayerPrefs.SetInt("Player nmbr 1 ", Pind);
+                Debug.Log("Saveing player identifaction 1!  " + Pind);
                 break;
             case 2:
-                Pind = 3;
-                Debug.Log("Case 3! " + Pind);
-                break;
+                PlayerPrefs.SetInt("Player nmbr 2 ", Pind);
+                Debug.Log("Saveing player identifaction 2!  " + Pind);
+                    break;
             case 3:
-                Pind = 4;
-                Debug.Log("Case 4! " + Pind);
-                break;
+                PlayerPrefs.SetInt("Player nmbr 3 ", Pind);
+                Debug.Log("Saveing player identifaction 3!  " + Pind);
+                    break;
             case 4:
-                Pind = 5;
-                Debug.Log("Case 5! " + Pind);
-                break;
+                PlayerPrefs.SetInt("Player nmbr 4 ", Pind);
+                Debug.Log("Saveing player identifaction 4!  " + Pind);
+                    break;
+            case 5:
+                PlayerPrefs.SetInt("Player nmbr 5 ", Pind);
+                Debug.Log("Saveing player identifaction 5!  " + Pind);
+                    break;
+
         }
 
         playerIndex = Pind;
+    }
+    public void IsAddKills()
+    {
+        int Player_one = PlayerPrefs.GetInt("Player nmbr 1 ", playerIndex);
+        Debug.LogWarning("Add kills to *playerName*: " + Player_one);
+
+        playerIndex = Player_one;
     }
 }
