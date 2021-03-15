@@ -1,0 +1,9 @@
+The seperateScript is finnished now we need to make sure what happens when we use the playerIndex
+- switch scene //DONE
+After that is done we need to add:
+- calculation for deaths
+- calculation for kills
+After we have added a function that adds the kills and deaths we need to summarize the total of both
+kills and deaths:
+- Summarize
+- KDR = K/D || Let me specify this. This is how you calculate the average kdr(kill death ratio).
