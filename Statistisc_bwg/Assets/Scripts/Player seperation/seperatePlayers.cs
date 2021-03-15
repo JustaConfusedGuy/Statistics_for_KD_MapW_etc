@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 /// <summary>
 /// This could be called the main script. This is where every script
 /// fetches the serial number or the index for every player.
